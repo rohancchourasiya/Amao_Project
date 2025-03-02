@@ -1,0 +1,127 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom right, #ffecd2, #fcb69f);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 10px;
+}
+
+.container {
+    max-width: 420px;
+    width: 100%;
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px 30px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+    margin: 15px auto;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #333;
+    letter-spacing: 1px;
+}
+
+h1::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #f77e21;
+    margin: 10px auto;
+}
+
+
+label {
+    font-size: 1rem;
+    color: #555;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+    border-color: #f77e21;
+    outline: none;
+    box-shadow: 0 0 8px rgba(247, 126, 33, 0.3);
+}
+
+
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(to left, #ff7e5f, #feb47b);
+    box-shadow: 0 4px 12px rgba(255, 126, 95, 0.3);
+}
+
+
+p {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #f77e21;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #e45d1a;
+    text-decoration: underline;
+}
+
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px 20px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    label {
+        font-size: 0.9rem;
+    }
+
+    input, button {
+        font-size: 0.9rem;
+    }
+}
